@@ -8,7 +8,7 @@ This example demonstrates how to use WunderGraph with Next.js. We are going to m
 
 ```shell
 npm install && npm start
-```
+```.   
 
 After a while, a new browser tab will open,
 and you can start exploring the application.
