@@ -20,7 +20,7 @@ Each file becomes an Operation. The Operation name is not relevant, the file nam
 
 ## Learn More
 
-Read the [Docs](https://wundergraph.com/docs).
+Read the [Docs](https://wundergraph.com/docs).   
 
 ## Deploy to WunderGraph Cloud
 
