@@ -1,3 +1,17 @@
+# WunderGraph Next.js Starter 
+
+This example demonstrates how to use WunderGraph with Next.js. We are going to make your data-source accessible through JSON-RPC to your Next.js app.
+
+## Getting Started
+     
+1. Install the dependencies and run the complete example in one command:      
+
+```shell
+npm install && npm start.  
+```.   
+
+After a while, a new browser tab will open,
+
 # WunderGraph Next.js Starter.         
  
 This example demonstrates how to use WunderGraph with Next.js. We are going to make your data-source accessible through JSON-RPC to your Next.js app.
@@ -11,6 +25,7 @@ npm install && npm start
 ```
     
 After a while, a new browser tab will open,   
+
 and you can start exploring the application.
 If no tab is open, navigate to [http://localhost:3000](http://localhost:3000).
 
@@ -21,6 +36,9 @@ Each file becomes an Operation. The Operation name is not relevant, the file nam
 ## Learn More
 
 Read the [Docs](https://wundergraph.com/docs).
+
+
+## Deploy to WunderGraph Cloud
 
 ## Deploy to WunderGraph Cloud.  
 
