@@ -44,6 +44,6 @@ Read the [Docs](https://wundergraph.com/docs).
 
 [![Deploy to WunderGraph](https://wundergraph.com/button)](https://cloud.wundergraph.com/new/clone?templateName=nextjs)
 
-## Got Questions?
+## Got Questions?    
 
 Join us on [Discord](https://wundergraph.com/discord)!
