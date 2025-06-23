@@ -126,7 +126,6 @@ type Employee implements Identifiable @key(fields: "id") {
   age: Int
   c: String
   d: String
-  e: String
 }
 
 type ErrorWrapper {
