@@ -72,6 +72,7 @@ type Employee @key(fields: "id") {
   products: [ProductName!]!
   notes: String @override(from: "employees")
   a: String
+  e: String
 }
 
 union Products = Consultancy | Cosmo | Documentation
