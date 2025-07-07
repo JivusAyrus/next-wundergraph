@@ -1,0 +1,69 @@
+schema {
+  query: Query
+}
+
+type Department @key(fields: "id") {
+  createdAt: String!
+  description: String!
+  employees: [Employment!]!
+  id: ID!
+  manager: User
+  name: String!
+  positions: [Position!]!
+  updatedAt: String!
+}
+
+type Employment @key(fields: "id") {
+  createdAt: String!
+  department: Department!
+  endDate: String
+  id: ID!
+  manager: User
+  position: Position!
+  startDate: String!
+  status: EmploymentStatus!
+  updatedAt: String!
+  user: User!
+}
+
+enum EmploymentStatus {
+  ACTIVE
+  INACTIVE
+  TERMINATED
+}
+
+enum EmploymentType {
+  CONTRACT
+  FULL_TIME
+  INTERN
+  PART_TIME
+}
+
+type Position @key(fields: "id") {
+  createdAt: String!
+  department: Department!
+  description: String!
+  employmentType: EmploymentType!
+  id: ID!
+  isActive: Boolean!
+  requirements: [String!]!
+  salaryRangeMax: Float!
+  salaryRangeMin: Float!
+  title: String!
+  updatedAt: String!
+}
+
+type Query {
+  department(id: ID!): Department
+  departments: [Department!]!
+  employment(id: ID!): Employment
+  employments: [Employment!]!
+  position(id: ID!): Position
+  positions: [Position!]!
+}
+
+type User @key(fields: "id") {
+  employment: Employment
+  id: ID!
+  phoneNumber: String
+}
