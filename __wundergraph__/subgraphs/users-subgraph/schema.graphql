@@ -1,0 +1,38 @@
+schema {
+  query: Query
+}
+
+type Address {
+  city: String!
+  country: String!
+  state: String!
+  street: String!
+  zipCode: String!
+}
+
+type EmergencyContact {
+  email: String
+  name: String!
+  phoneNumber: String!
+  relationship: String!
+}
+
+type Query {
+  user(id: ID!): User
+  userByEmail(email: String!): User
+  users: [User!]!
+}
+
+type User @key(fields: "id") {
+  address: Address
+  createdAt: String!
+  dateOfBirth: String
+  email: String!
+  emergencyContact: EmergencyContact
+  firstName: String!
+  fullName: String!
+  id: ID!
+  isActive: Boolean!
+  lastName: String!
+  updatedAt: String!
+}
